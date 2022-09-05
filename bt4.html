@@ -18,7 +18,18 @@
         h1 {
             text-align: center;
         }
-        
+
+        .imgs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media only screen and (min-width: 768px) {
+            .imgs {
+                max-height: 100vh;
+            }
+        }
         @media only screen and (max-width: 768px) {
             .one,
             .two,
@@ -34,21 +45,22 @@
 
 <body>
     <div class="imgs">
-        <div class="one">
-            <img src="https://i.pinimg.com/564x/87/47/1a/87471af4b5ab4ece0e5d8d001afb3339.jpg" width="80%">
-            <h1>Doraemon 1</h1>
-
+        <div class="container">
+            <div class="one">
+                <img src="https://i.pinimg.com/564x/87/47/1a/87471af4b5ab4ece0e5d8d001afb3339.jpg" width="80%">
+                <h1>Doraemon 1</h1>
+    
+            </div>
+            <div class="two">
+                <img src="https://i.pinimg.com/474x/15/0a/cf/150acf942bb369b17b61d31758f43e15.jpg" width="80%">
+                <h1>Doraemon 2</h1>
+            </div>
+    
+            <div class="three">
+                <img src="https://i.pinimg.com/474x/3d/71/ae/3d71aed6ad10bb125ae8d4bb6aae1ab2.jpg" width="80%">
+                <h1>Doraemon 3</h1>
+            </div>
         </div>
-        <div class="two">
-            <img src="https://i.pinimg.com/474x/15/0a/cf/150acf942bb369b17b61d31758f43e15.jpg" width="80%">
-            <h1>Doraemon 2</h1>
-        </div>
-
-        <div class="three">
-            <img src="https://i.pinimg.com/474x/3d/71/ae/3d71aed6ad10bb125ae8d4bb6aae1ab2.jpg" width="80%">
-            <h1>Doraemon 3</h1>
-        </div>
-
     </div>
 </body>
 
